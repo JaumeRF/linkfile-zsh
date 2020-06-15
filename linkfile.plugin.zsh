@@ -149,7 +149,7 @@ function linkfile_rename () {
     else
         if  grep -q "\[0\;0m "$1" " "${index_file}" 
         then
-            linkpath=$(grep -w "$1" "${index_file}")
+            linkpath=$(grep -w "\[0\;0m "$1" " "${index_file}")
             cleanpath=$(echo "$linkpath" | sed 's/[^ ]*[ ][^ ]*[ ][^ ]*[ ]//')
 
             mv "${HOME}/.linkfile/.indexfile" "${HOME}/.linkfile/.indexfile-old";
@@ -183,7 +183,7 @@ function linkfile_remove () {
     then 
         echo "${PURPLE}------------------------------------${NC}"
         echo ""
-        echo "Do you wish to delete the link: "$1" ?"
+        echo "${RED}Do you wish to delete the link:${NC} "$1" ?"
         select yn in "Yes" "No"; do
             case $yn in
                 Yes )  mv "${HOME}/.linkfile/.indexfile" "${HOME}/.linkfile/.indexfile-old";
@@ -210,7 +210,7 @@ function linkfile_delete () {
 
     echo "${PURPLE}------------------------------------${NC}"
     echo ""
-    echo "Do you wish to delete all your links?"
+    echo "${RED}Do you wish to delete all your links?${NC}"
     select yn in "Yes" "No"; do
         case $yn in
             Yes ) rm "${index_file}";touch ${HOME}/.linkfile/.indexfile;    
