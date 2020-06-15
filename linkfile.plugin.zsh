@@ -13,7 +13,7 @@
 #       Settings         #
 ##########################
 
-default var_prefix "§"
+default var_prefix "ƒ"
 
 if [ -f "${HOME}/.linkfile/.indexfile" ]
 then
