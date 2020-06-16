@@ -25,7 +25,7 @@ plugins=(... linkfile)
 - First, you need to copy the raw code in github.
 - After that, open your .zshrc file in a text editor and paste the raw code at the end.
 
-**Note:** normally the .zshrc file is in the home directory: `~/` at the terminal
+**Note:** normally the .zshrc file is in the home directory: `~/` at the terminal.
 
 ## Functions
 
@@ -41,9 +41,23 @@ plugins=(... linkfile)
 
 - `linkfile_delete`: remove all shortcuts
 
-**Note:** With `linkfile_remove`and `linkfile_delete` you'll be asked if you want to remove shortcuts:
+**Note:** With `linkfile_remove`and `linkfile_delete` you'll be asked if you want to remove shortcuts `1`accept `2`cancel:
 ```
 Do you wish to delete the link: [shortcut-name] ?
 1) Yes  2)No
 ?#
 ```
+## Usage
+
+First, generate a shortcut
+```zsh
+linkfile [shortcut-name] [path]
+```
+And then you can access to your folder with:
+```zsh
+ƒ [shortcut-name]
+````
+**Note:** the special character `ƒ` can be changed in `default var_prefix "ƒ"` in the .zsh file or in the raw code.
+
+## ALiases 
+
