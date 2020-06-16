@@ -78,7 +78,7 @@ function linkfile () {
                 select yn in "Yes" "No"; do
                     case $yn in
                     Yes ) echo "${PURPLE}<·>${NC} "$name" ${PURPLE}->${NC} "$(echo "$file_path")"" >> "${index_file}"; echo -e "\n"$name" added successfully\n"; break;;
-                    No ) exit;;
+                    No ) break;;
                     esac
                 done 
 
@@ -189,7 +189,7 @@ function linkfile_remove () {
                 Yes )  mv "${HOME}/.linkfile/.indexfile" "${HOME}/.linkfile/.indexfile-old";
                     grep -vwE "$1" "${HOME}/.linkfile/.indexfile-old" > "${HOME}/.linkfile/.indexfile";
                     rm "${HOME}/.linkfile/.indexfile-old"; break;;
-                No ) exit;;
+                No ) break;;
             esac
         done
     else
@@ -215,7 +215,7 @@ function linkfile_delete () {
         case $yn in
             Yes ) rm "${index_file}";touch ${HOME}/.linkfile/.indexfile;    
 		default index_file "${HOME}/.linkfile/.indexfile"; break;;
-            No ) exit;;
+            No ) break;;
         esac
     done
 }
