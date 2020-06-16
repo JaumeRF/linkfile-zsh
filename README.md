@@ -33,7 +33,7 @@ plugins=(... linkfile)
 - `linkfile [shortcut-name]`: add a shortcut to the actual directory
 - `linkfile`: add a shortcut, with the same name as the directory, to the actual directory 
 
-- `linkfile_ls`: lists all shortcuts
+- `linkfile_list`: lists all shortcuts
 
 - `linkfile_rename [old-name] [new-name]`: rename an existing shortcut
 
@@ -59,5 +59,22 @@ And then you can access to your folder with:
 ````
 **Note:** the special character `ƒ` can be changed in `default var_prefix "ƒ"` in the .zsh file or in the raw code.
 
-## ALiases 
+## Aliases 
 
+| Alias     | Command           |
+|:----------|:------------------|
+| lf        | linkfile          |
+| lfls      | linkfile_list     |
+| lfrnm     | linkfile_rename   |
+| lfrm      | linkfile_remove   |
+| lfdlt     | linkfile_delete   |
+
+## Future updates
+
+- Add a help option to show in the terminal the syntax of the function: `linkfile -help`
+- Add more actions like `ƒ ls [shortcut-name]`, `ƒ open [shortcut-name]`...
+- Add a function that show only the path of the shortcut
+
+## Author
+
+- **[Jaume Ros](https://github.com/JaumeRF)**
