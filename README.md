@@ -74,6 +74,7 @@ And then you can access to your folder with:
 - Add a help option to show in the terminal the syntax of the function: `linkfile -help`
 - Add more actions like `ƒ ls [shortcut-name]`, `ƒ open [shortcut-name]`...
 - Add a function that show only the path of the shortcut
+- Add an answer to remove actions to show that the process was successfully
 
 ## Author
 
