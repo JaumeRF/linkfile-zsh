@@ -42,8 +42,8 @@ plugins=(... linkfile)
 - `linkfile_delete`: remove all shortcuts
 
 **Note:** With `linkfile_remove`and `linkfile_delete` you'll be asked if you want to remove shortcuts:
-`
+```
 Do you wish to delete the link: [shortcut-name] ?
 1) Yes  2)No
 ?#
-`
+```
