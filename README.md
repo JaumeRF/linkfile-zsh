@@ -16,7 +16,7 @@ git clone https://github.com/JaumeRF/linkfile-zsh.git
 ````
 - And then add linkfile to the plugins array in your .zshrc file:
 ```zsh
-plugins=(... linkfile)
+plugins=(... linkfile-zsh)
 ```
 
 
@@ -26,7 +26,7 @@ plugins=(... linkfile)
 - After that, open your .zshrc file in a text editor and paste the raw code at the end.
 
 **Note:** normally the .zshrc file is in the home directory: `~/` at the terminal.
-
+**Note:** to reload the .zshrc file run `source ~/.zshrc`at the terminal.
 ## Functions
 
 - `linkfile [shorcut-name] [path]`: add a shortcut
